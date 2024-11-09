@@ -1,10 +1,11 @@
 <script setup>
 import { ref } from 'vue'
-const name = ref('')
 defineProps({
   text: String,
 })
+const name = ref('')
 const dataTest = 'これはデータです！'
+const fruitsList = ['りんご', 'いちご', 'バナナ']
 </script>
 
 <template>
@@ -15,4 +16,9 @@ const dataTest = 'これはデータです！'
     <input type="text" v-model="name" />
   </label>
   <p>ここの値が変わるよ→{{ name }}</p>
+  <ul>
+    <li v-for="fruit in fruitsList" :key="fruit">
+      <p>{{ fruit }}</p>
+    </li>
+  </ul>
 </template>
