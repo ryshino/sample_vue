@@ -5,24 +5,11 @@ import TestComponent from './components/TestComponent.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <TestComponent text="propsを試してみた" />
-  </main>
-
-  <RouterView />
+  <div>
+    <main>
+      <TestComponent text="propsを試してみた" />
+    </main>
+  </div>
 </template>
 
 <style scoped>
